@@ -25,31 +25,15 @@ class Router {
 
                 break;
 
-            case '/supprimer-livre':
-                $controller = new LivreController;
-                $controller->supprimerLivre();
-                break;
-
             case '/supprimer-molecule':
                 $controller = new MoleculeController;
                 $controller->supprimerMolecule();
                 break;
 
-            case '/creer-livre':
-                $controller = new LivreController;
-                $controller->creerLivre();
-                break;
-
-            case '/livres':
 
             case '/creer-molecule':
                 $controller = new MoleculeController;
                 $controller->creerUneMolecule();
-                break;
-
-            case '/livres':
-                $controller = new LivreController;
-                $controller->afficherTousLesLivres();
                 break;
 
             case '/molecules':
@@ -60,16 +44,6 @@ class Router {
             case '/supprimer-emprunt':
                 $controller = new EmpruntController;
                 $controller->supprimerEmprunt();
-                break;
-
-            case '/creer-emprunt':
-                $controller = new EmpruntController;
-                $controller->creerEmprunt();
-                break;
-
-            case '/emprunts':
-                $controller = new EmpruntController;
-                $controller->afficherTousLesEmprunts();
                 break;
 
             default:
