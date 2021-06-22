@@ -41,10 +41,6 @@ class Router {
                 $controller->afficherTousLesMolecules();
                 break;
 
-            case '/supprimer-emprunt':
-                $controller = new EmpruntController;
-                $controller->supprimerEmprunt();
-                break;
 
             default:
                 echo 'Page non trouvée';
