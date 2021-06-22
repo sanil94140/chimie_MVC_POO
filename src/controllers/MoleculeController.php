@@ -14,7 +14,8 @@ class MoleculeController {
 
     public function supprimerMolecule(){
         $MoleculeModel= new MoleculeModel;
-        $livreModel->supprimerMolecule($_GET['id']);
+        $MoleculeModel->supprimerMolecule($_GET['id']);
+        rediriger('/molecules');
 
     }
 

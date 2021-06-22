@@ -14,13 +14,12 @@ class Router {
 
             case '/connexion':
                 session_start();
-                se_connecter();
-                rediriger('/molecules');
-
+                $connexion= new SessionController();
+                $connexion->connexion();
                 break;
 
             case '/deconnexion':
-                se_deconnecter();
+                seDeconnecter();
                 rediriger('/molecules');
 
                 break;

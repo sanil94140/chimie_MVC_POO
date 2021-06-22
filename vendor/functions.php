@@ -13,13 +13,14 @@ function est_connecte() {
     return isset($_SESSION['is_connected']) && $_SESSION['is_connected'] === true;
 }
 
-function se_connecter() {
+function seConnecter() {
     $bdd = new PDO('mysql:host='.Config::DB_HOST.';dbname='.Config::DB_NAME, Config::DB_USER, Config::DB_PSW);
      $_SESSION['is_connected'] === true;
+     var_dump($_SESSION['is_connected']);
      return;
 }
 
-function se_deconnecter(){
+function seDeconnecter(){
     session_destroy();
     session_start();
     return;

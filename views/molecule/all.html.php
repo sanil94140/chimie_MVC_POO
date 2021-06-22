@@ -1,10 +1,10 @@
 <?php
 
-session_start();
+// session_start();
 
 
-include Config::DOSSIER_VIEWS . '/parties/entete.php'; ?>
-
+include Config::DOSSIER_VIEWS . '/parties/entete.php'; 
+var_dump( est_connecte());?>
 <table class="table">
     <thead>
         <tr>
@@ -49,7 +49,7 @@ include Config::DOSSIER_VIEWS . '/parties/entete.php'; ?>
                 ?>
 
                 </td>
-                <td><a href="<?= url('/supprimer-molecule') . '?id=' . $molecule['id'] ?>">Supprimer</a></td>
+                <td><a href="<?= url('/supprimer-molecule') . '?id=' . $m['id'] ?>">Supprimer</a></td>
             </tr>
         <?php endforeach; ?>
     </tbody>

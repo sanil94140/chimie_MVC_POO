@@ -17,7 +17,7 @@
 
         <ul class="nav nav-tabs" id="nav">
             <li class="nav-item">
-                <a href="molecules.php" class="nav-link">Molécules</a>
+                <a href=<?= url('/molecules')?> class="nav-link">Molécules</a>
             </li>
 
             <?php if (est_connecte()) : ?>

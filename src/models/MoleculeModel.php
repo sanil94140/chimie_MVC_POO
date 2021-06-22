@@ -43,5 +43,11 @@ class MoleculeModel extends Model{
         $prep->execute([
             $id
         ]);
+
+        $requete = 'DELETE FROM atome_molecule WHERE id_molecule = ?';
+        $prep = $this->bdd->prepare($requete);
+        $prep->execute([
+            $id
+        ]);
     }
 }
